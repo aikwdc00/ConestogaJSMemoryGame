@@ -1,0 +1,63 @@
+body {
+  padding: 2rem 3rem;
+  margin: 3rem auto;
+  box-shadow: 0 5px 10px gray;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+main {
+  box-shadow: 0 0px 10px gray;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.memoryCard {
+  display: inline-block;
+  flex: 12% 0 1;
+  transition: 0.5s;
+}
+
+.memoryCard img {
+  border: 2px solid #e0e0e0;
+  display: block;
+  margin: 5px auto;
+  width: 80px;
+  height: 110px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.hide {
+  opacity: 0 !important;
+  animation: hide 1s ease 1;
+}
+@keyframes hide {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.back {
+  background: url("../images/back.png");
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+.thanks {
+  text-align: center;
+}
